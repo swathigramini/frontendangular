@@ -1,0 +1,49 @@
+<div class="carousel slide carousel-fade" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+        </div>
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+    </div>
+</div>
+<!-- Remeber to put all the content you want on top of the slider below the slider code -->
+<div class="title">
+<nav class="navbar navbar-inverse navbar-expand-md navbar-dark" data-spy="affix" data-offset-top="197" style="background-color:purple;">
+    <a class="navbar-brand" routerLink="#">ARS</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/flight">Flight</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/add-flight">Add Flight</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/book-ticket">Book-Ticket</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/update-flight">update-flight</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/login">Login</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/register">Register</a>
+            </li>
+            <li class="nav-item" *ngIf="role !== null">
+                <a class="nav-link" (click)="logout()">logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</div>

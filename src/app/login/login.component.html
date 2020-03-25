@@ -1,0 +1,20 @@
+<div class="col-md-4 offset-4 card card-body mt-5">
+    <form #form="ngForm" (ngSubmit)="loginData(form)">
+        <div class="form-group">
+            <label for="email">Enter email: *</label>
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="helpId"
+                placeholder="Enter Email..." required ngModel pattern=".+@tutsplus\.com|.+@envato\.com">
+        </div>
+        <div class="form-group">
+            <label for="psw">Enter password: *</label>
+            <input type="password" class="form-control" name="psw" id="psw" aria-describedby="helpId"
+                placeholder="Enter password..." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at
+                 least one number and one uppercase and lowercase letter,
+                  and at least 8 or more characters" required ngModel>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-outline-primary">Login</button>
+        </div>
+    </form>
+</div>  
+

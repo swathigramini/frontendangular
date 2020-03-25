@@ -1,0 +1,56 @@
+<div class="col-md-4 offset-4 card card-body mt-5">
+    <h4>Book-Ticket</h4>
+    <form action="">
+        <div class="form-group">
+            <label for="flightId">Enter user Id</label>
+            <input type="id" class="form-control" name="userId" id="userId" aria-describedby="helpId"
+                placeholder="Enter user Id..." ngModel>
+        </div>
+        <div class="form-group">
+            <label for="flightId">Enter flight Id</label>
+            <input type="id" class="form-control" name="flightId" id="flightId" aria-describedby="helpId"
+                placeholder="Enter flight Id..." ngModel>
+        </div>
+        <div class="form-group">
+            <label for="journeyDate">Enter journeyDate</label>
+            <input type="date" class="form-control" name="journeyDate" id="journeyDate" aria-describedby="helpId"
+                placeholder="Enter journeyDate..." ngModel>
+        </div>
+        <div class="form-group">
+          <label for="journeyTime">Enter journeyTime</label>
+          <input type="time" class="form-control" name="journeyTime" id="journeyTime" aria-describedby="helpId"
+              placeholder="Enter journeyTime..." ngModel>
+      </div>
+          <div class="form-group">
+            <label for="destination">Choose destination...</label>
+            <select ngModel class="form-control" name="destination" id="destination">
+              <option value="Dubai">Dubai</option>
+              <option value="Israel">Israel</option>
+              <option value="Bhutan">Bhutan</option>
+              <option value="Srilanka">Srilanka</option>
+              <option value="Delhi">Delhi</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="source">Choose source...</label>
+            <select ngModel class="form-control" name="source" id="source">
+              <option value="Bengaluru">Bengaluru</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="chennai">chennai</option>
+              <option value="Delhi">Delhi</option>
+            </select>
+          </div>
+        <div class="form-group">
+          <label for="numOfSeats">Enter  number of seats</label>
+          <input type="number" class="form-control" name="numOfSeats" id="numOfSeats" aria-describedby="helpId"
+              placeholder="Enter  number of seats..." ngModel>
+      </div>
+        <div>
+            <button type="submit" class="btn btn-outline-primary">Book-ticket</button>
+        </div>
+    </form>
+</div>
+
+
+

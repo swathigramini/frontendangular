@@ -1,0 +1,57 @@
+<div class="col-md-4 offset-4 card card-body mt-5">
+  <form #form="ngForm" (ngSubmit)="registerData(form)">
+    <div class="form-group">
+      <label for="userName">Enter name..</label>
+      <input type="text" class="form-control" name="userName" id="userName" aria-describedby="helpId"
+        placeholder="Enter name..." ngModel required minlength="4" #userName="ngModel">
+    </div>
+    <div *ngIf="userName.invalid && (userName.dirty || userName.touched)" class="alert alert-danger">
+
+      <div *ngIf="userName.errors.required">
+        Name is required.
+      </div>
+      <div *ngIf="userName.errors.minlength">
+        Name must be at least 4 characters long.
+      </div>
+    </div>
+      <div class="form-group">
+        <label for="emailId">Enter email..</label>
+        <input type="email" class="form-control" name="emailId" id="emailId" aria-describedby="helpId"
+          placeholder="Enter Email..." ngModel>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Enter phone Number..</label>
+        <input type="number" class="form-control" name="mobile" id="mobile" aria-describedby="helpId"
+          placeholder="Enter phone Number..." ngModel>
+      </div>
+      <div class="form-group">
+        <label for="password">Enter password..</label>
+        <input type="password" class="form-control" name="password" id="password" aria-describedby="helpId"
+          placeholder="Enter password..." ngModel>
+      </div>
+      <div class="form-group">
+        <label for="role">Choose Role...</label>
+        <select class="form-control" name="role" id="role" ngModel="user">
+          <option value="admin">admin</option>
+          <option value="user">user</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="nationality">Choose nationality...</label>
+        <select class="form-control" name="nationality" id="nationality" ngModel="indian">
+          <option value="indian">indian</option>
+          <option value="american">american</option>
+          <option value="italian">italian</option>
+          <option value="australian">australian</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="address">Enter address..</label>
+        <input type="text" class="form-control" name="address" id="address" aria-describedby="helpId"
+          placeholder="Enter address..." ngModel>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-outline-primary">Register</button>
+      </div>
+  </form>
+</div>
